@@ -1,0 +1,188 @@
+body {
+  background-image: url("../images/fondos/fondo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Great Vibes";
+  text-align: center;
+}
+
+h1 {
+  text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
+  color: #330000;
+  font-size: 80px;
+}
+
+/*boton arriba*/
+.log{
+  width: 50px;
+  height: 50px;
+}
+.arriba{
+  position: relative;
+  right: -700px;
+}
+
+.registro {
+  background-image: url("../images/fondos/fondo.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.formregistro {
+  background-color: #d7ccc8;
+  border: 4px solid maroon;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  box-shadow: 0 0 15px 10px;
+  width: 600px;
+  height: 500px;
+   margin-left: 27%; 
+  font-style: italic;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.formlogin {
+  background-color: #d7ccc8;
+  border: 4px solid maroon;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  box-shadow: 0 0 15px 10px;
+  width: 600px;
+  height: 300px;
+  margin-left: 25%;
+  font-style: italic;
+  padding: 5px;
+  margin-top: -20px;
+}
+
+input {
+  border-radius: 34px;
+  padding: 5px;
+}
+
+label {
+  font-size: 25px;
+  color: #09015f;
+  font-weight: bold;
+}
+
+.btnlogin {
+  color: rgb(6, 6, 66);
+  font-weight: bold;
+  background-color: cadetblue;
+  border: 2px solid darkred;
+  border-radius: 34px;
+  margin-right: 10px;
+  width: 150px;
+  height: 40px;
+}
+.spanp2 {
+  font-size: 37px;
+  color: white;
+}
+
+/* .btn {
+  color: rgb(6, 6, 66);
+  font-weight: bold;
+  background-color: cadetblue;
+  border: 2px solid darkred;
+  border-radius: 34px;
+  margin-right: 10px;
+  width: 90px;
+  height: 40px;
+} */
+.btnregistro{
+  color: rgb(6, 6, 66);
+  font-weight: bold;
+  background-color: cadetblue;
+  border: 2px solid darkred;
+  border-radius: 34px;
+  margin-right: 10px;
+  width: 90px;
+  height: 40px;
+  margin-left: 300%;
+}
+.btncambio{
+  color: rgb(6, 6, 66);
+  font-weight: bold;
+  background-color: cadetblue;
+  border: 2px solid darkred;
+  border-radius: 34px;
+  margin-right: 10px;
+  width: 90px;
+  height: 40px;
+}
+a {
+  color: black;
+}
+
+a:visited {
+  color: #002b5b;
+}
+
+a:active {
+  color: #002b5b;
+}
+
+.btn2 {
+  color: black;
+  font-weight: bold;
+  background-color: lightsteelblue;
+  border: 2px solid #330033;
+  border-radius: 10px;
+  margin-right: 5%;
+  width: 140px;
+  height: 40px;
+}
+
+.btn-group {
+  margin: auto;
+}
+
+.nav {
+  margin-top: 45px;
+}
+
+#error {
+  display: none;
+  color: darkred;
+}
+
+#error2 {
+  display: none;
+  color: darkred;
+}
+
+#error3 {
+  display: none;
+  color: darkred;
+}
+#error4{
+  display: none;
+  color: red;
+}
+.olvido{
+  font-size: 10px;
+  color: black;
+  text-align: center;
+}
+.formcambio{
+  background-color: #d7ccc8;
+  border: 4px solid maroon;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  box-shadow: 0 0 15px 10px;
+  width: 600px;
+  height: 300px;
+  margin-left: 25%;
+  font-style: italic;
+  padding: 5px;
+  margin-top: -20px;
+}

@@ -1,0 +1,22 @@
+.btnproducto{
+    border: 2px solid darkslategrey;
+    border-radius: 34px;
+    background-color: thistle;
+    width: 170px;
+    margin-left: 20px;
+  }
+  
+  .card-img {
+    width: 422px;
+    height: 250px;
+    border-radius: 25px;
+    &:hover{
+        transform: scale(1.15);
+    }
+  }
+  .img-grande{
+    @extend .card-img;
+    width: 500px;
+    height: 350px;
+  }
+ 

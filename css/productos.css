@@ -1,0 +1,108 @@
+.productos {
+  background-image: url("../images/fondos/fondoprod4.jpg");
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  font-family: "Great Vibes";
+  text-align: center;
+}
+
+.container {
+  background: rgba(157, 178, 191, 0.7);
+}
+
+.titulo {
+  font-family: "Courgette", cursive;
+  font-family: "Pacifico", cursive;
+  text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
+  color: #658864;
+  font-size: 120px;
+}
+
+/*boton arriba*/
+.log {
+  width: 50px;
+  height: 50px;
+}
+
+.arriba {
+  position: relative;
+  left: 50%;
+}
+
+/*PRODUCTOS*/
+.card {
+  margin: 10px 30px 10px 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 330px;
+}
+.card .card-body {
+  background-color: #C1D0B5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.card b {
+  font-size: 24px;
+}
+.card .span {
+  font-size: 22px;
+}
+.card .spantipo {
+  font-size: 22px;
+}
+.card .spanmarca {
+  font-size: 22px;
+}
+.card .spannombre {
+  font-size: 22px;
+}
+
+.ultimo {
+  position: relative;
+  top: -20%;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.favoritos {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/logos/globo-de-corazonsinrelleno.png");
+  background-size: cover;
+  transition: background-image 0.3s;
+}
+.favoritos:hover {
+  background-image: url("../images/logos/globo-de-corazon.png");
+}
+
+#th {
+  display: none;
+}
+
+.btnproducto {
+  border: 2px solid darkslategrey;
+  border-radius: 34px;
+  background-color: thistle;
+  width: 170px;
+  margin-left: 20px;
+}
+
+.card-img, .img-grande {
+  width: 422px;
+  height: 250px;
+  border-radius: 25px;
+}
+.card-img:hover, .img-grande:hover {
+  transform: scale(1.15);
+}
+
+.img-grande {
+  width: 500px;
+  height: 350px;
+}/*# sourceMappingURL=productos.css.map */

@@ -1,0 +1,146 @@
+// @use "mixinsindex";
+$fondo-cajas:#C1D0B5;
+$fondo-cajas-tienda:#D2E9E9; 
+$negrita: bold;
+$subrayado: underline overline;
+$subrayado-guiones: dashed;
+
+body{
+    // font-family: monospace;
+    text-align: center;
+    background-image: url("../images/fondos/fondoindex2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*BARRAS LATERALES*/
+.cajas--texto{
+    background-color: #94AF9F;
+    border-radius: 15px;
+    margin-right: 5px;
+
+    .cajas--parrafo{
+        font-size: 20px;
+        font-weight: $negrita;
+        text-align: center;
+        color: black;
+    }
+}
+.cajas{
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 3px;
+
+    .caja{
+        width: 280px;
+        margin-left: 0px;
+        background-color: $fondo-cajas;
+        border-radius: 24px;      
+        text-align: center;
+        &:hover{
+            transform: scale(1.10);
+            margin-top: 5px;
+        }
+    }
+    
+    span.text--destacado{
+        font-size: 17px;
+        font-weight: $negrita;
+        text-align: center;
+    }
+    p.text--precio{
+        font-size: 26px;
+        text-decoration-line: $subrayado;
+        text-decoration-style: $subrayado-guiones;
+        
+    }
+}
+.card-img{
+    width: 300px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+.card{
+    background-color: $fondo-cajas;
+    border-radius: 24px;
+    &:hover{
+        transform: scale(1.10);
+        margin-top: 5px;
+    }
+    .card-header{
+        background-color: $fondo-cajas;
+        text-align: center;
+    }
+    a{
+      text-decoration: none;
+      font-size: 20px;
+      color: darkred;
+      font-weight: bold;
+      &:active{
+         color: darkred;
+        }
+        &:hover{
+         color: darkred;
+        }
+        &:visited{
+         color: darkred;
+        }
+    }
+    .card-body{
+        object-fit: cover;
+        background-color: $fondo-cajas;
+        .enfasis{
+         color: #40128B;
+         font-size: 18px;
+        }
+        .card-text{
+         font-size: 14px;
+         text-decoration: none;
+        }
+         .aviso{
+            font-family:italic;
+            font-size: 14px;
+            font-weight: $negrita;
+         }
+        }
+        .card--tienda{
+            background-color: $fondo-cajas-tienda;
+        }
+        h6{
+            font-weight: $negrita;
+        }
+}
+
+/*CAROUSEL*/
+.carousel{
+   height: 500px;
+   border-radius: 25px;
+   margin-left: 50px;
+    .carousel-item{
+        width: 100%;
+        height: 500px;
+    }
+}
+/*LINEAS SEPARACION*/
+.linea{
+    background-color: rgba(128,128,128,0.8);
+    box-shadow: 0 0 15px 10px;
+    border-radius: 10px;
+    background-size: cover;
+    height: 60px;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+    left: 10px;
+    
+    .linea--parrafo{
+        text-align: center;
+        font-weight: $negrita;
+        font-size: 40px;
+        font-family: cursive;
+        color: black;
+        padding-bottom: 15px;
+    }
+}

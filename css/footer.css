@@ -1,0 +1,36 @@
+.footer {
+    text-align: center;
+    margin: 0 0 auto 0;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    background: rgba(210,233,233,0.5);
+    margin-bottom: -26px;
+}
+
+.logo-footer {
+    width: 20px;
+    height: 20px;
+}
+.copyright-text{
+    font-size: 20px;
+    font-family: Arial Black;
+}
+.informaciones{
+    position: relative;
+    margin-left: 30%;
+    
+}
+.titulo--footer{
+    padding-left:10px;
+    padding-right: 10px;
+    border-bottom: 1px solid darkgray;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text--footer{
+    font-size: 19px;
+}
+.contacto{
+    margin-left: -600px;
+}
