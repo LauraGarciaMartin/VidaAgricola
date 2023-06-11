@@ -16,7 +16,7 @@
     font-size: 20px;
     font-family: Arial Black;
 }
-.informaciones{
+.info{
     position: relative;
     margin-left: 30%;
     
@@ -33,4 +33,16 @@
 }
 .contacto{
     margin-left: -600px;
+}
+@media only screen and(min-width: 400px) and (max-width: 800px){
+    .info{
+        display: block;
+        margin-left: -30%;
+    }
+    td{
+        display: block;
+    }
+    .contacto{
+        margin-left: -100%;
+    }
 }

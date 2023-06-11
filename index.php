@@ -142,6 +142,12 @@ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQS
                             <div class="carousel-item" data-bs-interval="4000">
                                 <img class="img-fluid" src="images/fotos/foto5.jpg" alt="">
                             </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="images/fotos/foto6.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="images/fotos/foto7.jpg" alt="" class="img-fluid">
+                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel"
                             data-bs-slide="prev">
@@ -168,7 +174,10 @@ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQS
                                 aria-label="Slide 6" type="button"></button>
                             <button class="" data-bs-target="#mi-carousel" data-bs-slide-to="7" aria-label="Slide 7"
                                 type="button"></button>
-                            
+                                <button class="" data-bs-target="#mi-carousel" data-bs-slide-to="8" aria-label="Slide 8"
+                                type="button"></button>
+                                <button class="" data-bs-target="#mi-carousel" data-bs-slide-to="9" aria-label="Slide 9"
+                                type="button"></button>
                         </div>
                     </div>
                     <hr>

@@ -19,13 +19,13 @@
             <div class="container my-2">
                 <div class="row align-items-end">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-column-3 t2">
+                        <div class="col-lg-12 col-md-4 col-sm-4 col-xs-3 footer-column-3 t2">
                             <span class="copyright-text">Todos los derechos reservados</span>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-column-4">
+                        <div class="col-lg-12 col-md-4 col-sm-4 col-xs-3 footer-column-4">
                             <div class="informaciones">
                                 <table class="info">
                                     <tr>

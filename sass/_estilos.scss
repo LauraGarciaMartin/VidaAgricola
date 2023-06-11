@@ -32,9 +32,9 @@
     border-radius: 24px;
     
   }
-  // .formulario__responsive{
-  //   display: none;
-  // }
+  .formulario__responsive{
+    display: none;
+  }
   .formregistro{
     text-align: center;
     background-color: #d7ccc8;
@@ -130,6 +130,10 @@
     font-weight: bold;
     
   }
+  .error{
+    color: red;
+    font-size: 20px;
+  }
   #error {
     display: none;
     color: darkred;
@@ -150,11 +154,11 @@
   }
   /*RESPONSIVE*/
  @media only screen and (max-width: 550px){
-    // .formulario{
-    //     display: none;
-    // }
+    .formulario{
+        display: none;
+    }
     .formulario__responsive{
-        // display: block;
+        display: block;
         background: rgba(210,233,233,0.6);
     margin: auto;
     margin-top: 20px;

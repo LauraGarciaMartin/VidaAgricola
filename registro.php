@@ -47,9 +47,7 @@
         </form>
     </div>
     
-        <script src="js/validar.js"></script>
-    
-    <!-- <div class="formulario__responsive">
+     <div class="formulario__responsive">
         <h1 class="formulario__responsive-titulo">Registrate</h1>
         <form id="formregistroresponsive" name="formregistroresponsive" class="formulario__responsive-formregistro" action="registro.php" method="post">
             <label>Nombre de usuario: </label><br>
@@ -78,11 +76,11 @@
             <a id="error3">El telefono tiene que tener 9 digitos</a>
             <input type="submit" id="registrarse" name="registrarse" value="Enviar" class="formulario__responsive-btnregistro">
         </form>
-    </div> -->
+    </div>
 
     <?php
     require_once("config.php");
-    if (isset($_POST['registrar']) ) {
+    if (isset($_POST['registrar']) || isset($_POST['registrarse'])) {
         if (
             !empty($_POST['user']) && !empty($_POST['pass']) && !empty($_POST['passconfirm']) &&
             !empty($_POST['nombre']) && !empty($_POST['ape1']) && !empty($_POST['ape2']) &&
@@ -99,6 +97,35 @@
             $codpostal = htmlspecialchars($_POST['codpostal']);
             $tel = htmlspecialchars($_POST['tel']);
 
+            function compruebaContrasena(){
+                if($_POST['pass'] == $_POST['passconfirm']){
+                    return true;
+                } else{
+                    return false;
+                }
+            }
+            function compruebaCodigo(){
+                if(strlen($_POST['codpostal']) == 5){
+                    return true;
+                } else{
+                    return false;
+                }
+            }
+            function compruebaCorreo(){
+                if(strpos($_POST['email'], "@") !== false && strpos($_POST['email'], ".") !== false){
+                    return true;
+                } else{
+                    return false;
+                }
+            }
+            function compruebaTelefono(){
+                if(strlen($_POST['tel']) == 9){
+                    return true;
+                } else{
+                    return false;
+                }
+            }
+
             $conn = new mysqli($host, $username, $password, $bbdd);
 
             $query = "SELECT user FROM usuarios WHERE user='$user'";
@@ -106,15 +133,23 @@
             if (mysqli_num_rows($res) > 0) {
                 echo "ya existe";
             } else {
-                $sql = "INSERT INTO usuarios(user,contrasenia,nombre,apellido1,apellido2,email,direccion,codigo_postal,telefono) 
-                    VALUES('$user',md5('$pass'),'$nombre','$ape1','$ape2','$email','$dir','$codpostal','$tel')";
-                $resultado = $conn->query($sql);
-                echo "subida correcta";
+                if(compruebaContrasena() == true && compruebaCorreo() == true && compruebaCodigo() == true && compruebaTelefono() == true){
+                    $sql = "INSERT INTO usuarios(user,contrasenia,nombre,apellido1,apellido2,email,direccion,codigo_postal,telefono) 
+                        VALUES('$user',md5('$pass'),'$nombre','$ape1','$ape2','$email','$dir','$codpostal','$tel')";
+                    $resultado = $conn->query($sql);
+                    echo "subida correcta";
+                } else{
+                    echo "<b class='error'>Error. Comprueba que:<br>Las contraseñas coincidan.<br>El correo contenga los caracteres @ y .<br>
+                    El codigo postal contenga 5 digitos.<br>El telefono contenga 9 digitos.</b>";
+                }
             }
+            
         } else {
             echo "No pueden estar vacios";
         }
+        
     }
+    
     ?>
     <footer class="footer footer-19">
             <div class="container my-2">

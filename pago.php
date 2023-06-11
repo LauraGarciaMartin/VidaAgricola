@@ -48,7 +48,6 @@
                 <input type="submit" onclick="comprobarTodo()" id="pagar" name="pagar" value="Pagar" class="botonpago">
             </form>
         </div>
-        <script src="js/validarPagos.js"></script>
         <div class="formulario__responsive">
         <h3 class="formulario__responsive-titulo--pago">Datos de Facturación:</h3>
             <form id="formpago" name="formpago" class="formulario__responsive-formpago" action="pago.php" method="post">
@@ -100,6 +99,30 @@
                         $fec = htmlspecialchars($_POST['fec']);
                         $cvv = htmlspecialchars($_POST['cvv']);
                         $tit = htmlspecialchars($_POST['tit']);
+
+                        function compruebaNumero(){
+                            if(strlen($_POST['num']) == 10){
+                                return true;
+                            } else{
+                                return false;
+                            }
+                        }
+                        function compruebaFecha(){
+                            $hoy = new DateTime();
+                            $fec = new DateTime($_POST['fec']);
+                            if($fec > $hoy){
+                                return true;
+                            } else{
+                                return false;
+                            }
+                        }
+                        function compruebaCVV(){
+                            if(strlen($_POST['cvv']) == 3){
+                                return true;
+                            } else{
+                                return false;
+                            }
+                        }
                         
                         $sql = "SELECT * FROM pagotarjeta WHERE numero='$num'";
                         $res = $conn->query($sql);
@@ -109,8 +132,7 @@
                     <input type='submit' id='irresumen' name='irresumen' value='Pagar' class='btnpagar'>
                 </form>";
                         } else{
-                            
-                                
+                        if(compruebaNumero() == true && compruebaFecha() == true && compruebaCVV() == true){
                             $query = "INSERT INTO pagotarjeta(nombre_titular,numero,fecha,CVV)
                             VALUE('$tit','$num','$fec','$cvv')";
                             if ($conn->query($query) === TRUE) {
@@ -118,8 +140,11 @@
                                 echo "<form action='gracias.php' method='post'>
                     <input type='submit' id='irrresumen' name='irrresumen' value='Pagar' class='btnpagar'>
                 </form>";
+                            } 
                             } else {
-                                echo "Error al insertar datos: " . $conn->error;
+                                echo "<b class='error'>Error. Comprueba que:<br>El numero tiene que contener 10 digitos.<br>
+                                La fecha tiene que ser mayor a la de hoy.<br>
+                    El CVV tiene que contener 3 digitos.</b>";
                             
                         
                     }
