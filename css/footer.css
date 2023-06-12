@@ -2,23 +2,28 @@
     text-align: center;
     margin: 0 0 auto 0;
     position: relative;
-    margin-top: 20px;
+    margin-bottom: -100%;
+    margin-top: 55px;
     width: 100%;
     background: rgba(210,233,233,0.5);
-    margin-bottom: -26px;
+   
+}
+.footer-cambio {
+    text-align: center;
+    margin: 0 0 auto 0;
+    position: relative;
+    
+    margin-top: 300px;
+    width: 100%;
+    background: rgba(210,233,233,0.5);
 }
 
-.logo-footer {
-    width: 20px;
-    height: 20px;
-}
 .copyright-text{
     font-size: 20px;
     font-family: Arial Black;
 }
-.info{
+.table{
     position: relative;
-    margin-left: 30%;
     
 }
 .titulo--footer{
@@ -27,22 +32,11 @@
     border-bottom: 1px solid darkgray;
     font-size: 20px;
     font-weight: bold;
+    padding: 0;
 }
 .text--footer{
     font-size: 19px;
 }
-.contacto{
+/* .contacto{
     margin-left: -600px;
-}
-@media only screen and(min-width: 400px) and (max-width: 800px){
-    .info{
-        display: block;
-        margin-left: -30%;
-    }
-    td{
-        display: block;
-    }
-    .contacto{
-        margin-left: -100%;
-    }
-}
+} */

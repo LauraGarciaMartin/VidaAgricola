@@ -48,14 +48,15 @@ a:visited {
     color: #330000;
 }
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     position: relative;
 }
 
 .boton-cambio{
     top: 260px;
-    margin-left:40%;
+    margin-left:45%;
+    font-size: 20px;
     cursor:pointer;
     background: transparent;
     position: relative;
@@ -85,7 +86,12 @@ label {
     color: #000066;
     font-weight: bold;
 }
-
+.container{
+    background: rgba(210,233,233,0.7);
+    border-radius: 24px;
+    align-items: center;
+    height: auto;
+}
 
 .imagenes {
     background-color: #d6dbdf;
@@ -95,10 +101,10 @@ label {
     background: rgba(0, 0, 0, .1);
     background-size: cover;
     box-shadow: 0 0 15px 10px;
-    width: 500px;
-    height: 150px;
-    margin-left: 32%;
-    margin-top: 50px;
+    width: 600px;
+    font-size: 20px;
+    height: auto;
+    margin-top: 20px;
     font-style: italic;
     padding: 5px;
 }
@@ -106,20 +112,22 @@ label {
 input {
     border-radius: 34px;
     padding: 5px;
-    margin-left: 10px;
+    
     margin-top: 20px;
 }
 
 .boton2 {
-    color: black;
+    color: rgb(6, 6, 66);
     font-weight: bold;
-    background-color: darkslateblue;
-    border: 2px solid black;
-    border-radius: 30px;
-    margin-left: 5%;
-    margin-top: 10px;
-    width: 150px;
+    font-size: 22px;
+    background-color: cadetblue;
+    border: 2px solid darkred;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 170px;
     height: 40px;
+    border-radius: 20px;
 }
 .boton2:hover{
     background-color: darkcyan;
@@ -127,7 +135,7 @@ input {
 .boton {
     color: rgb(6, 6, 66);
     font-weight: bold;
-    background-color: darkslateblue;
+    background-color: cadetblue;
     border: 2px solid black;
     border-radius: 34px;
     margin-right: 5%;
@@ -140,10 +148,12 @@ input {
 .volver {
     color: rgb(6, 6, 66);
     font-weight: bold;
+    font-size: 20px;
     background-color: cadetblue;
     border: 2px solid darkred;
     margin-left: 50%;
-    width: 90px;
+    margin-top: 20px;
+    width: 100px;
     height: 40px;
     border-radius: 20px;
 }

@@ -68,7 +68,6 @@
 
 .btnregistro {
   margin-top: 5px;
-  margin-right: 10px;
   color: black;
   font-weight: bold;
   border-radius: 12px;
@@ -94,32 +93,26 @@
 .titulo {
   text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
   color: #330000;
-  font-size: 140px;
+  font-size: 100px;
   font-weight: bold;
 }
 
 .titulo--cambio {
   text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
   color: #330000;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
 }
 
 /*FORMULARIO REGISTRO, LOGIN Y CAMBIO DE CONTRASEÑA*/
-.formulario {
+.container {
   background: rgba(210, 233, 233, 0.6);
-  margin: auto;
-  margin-top: 20px;
-  width: 60%;
   border-radius: 24px;
-}
-
-.formulario__responsive {
-  display: none;
+  align-items: center;
+  height: auto;
 }
 
 .formregistro {
-  text-align: center;
   background-color: #d7ccc8;
   border: 4px solid maroon;
   border-radius: 40px;
@@ -127,22 +120,11 @@
   background-size: cover;
   box-shadow: 0 0 15px 10px;
   width: 660px;
-  height: 560px;
-  margin-left: 22%;
+  height: auto;
   font-style: italic;
-}
-
-.izquierda {
-  margin-left: -270px;
-}
-
-.derecha {
-  margin-left: 290px;
-  margin-top: -460px;
-}
-
-.abajo {
-  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  padding: 5px;
 }
 
 .formlogin {
@@ -155,13 +137,13 @@
   box-shadow: 0 0 15px 10px;
   width: 500px;
   height: auto;
-  margin-left: 28%;
   font-style: italic;
   padding: 5px;
   margin-top: 20px;
 }
 
 span.spanp2 {
+  margin-top: -100%;
   font-size: 37px;
   color: black;
 }
@@ -174,8 +156,7 @@ span.spanp2 {
   background-size: cover;
   box-shadow: 0 0 15px 10px;
   width: 600px;
-  height: 350px;
-  margin-left: 30%;
+  height: auto;
   font-style: italic;
   padding: 5px;
   margin-top: 20px;
@@ -220,231 +201,4 @@ a:active {
 .b {
   font-size: 30px;
   font-weight: bold;
-}
-
-.error {
-  color: red;
-  font-size: 20px;
-}
-
-#error {
-  display: none;
-  color: darkred;
-}
-
-#error2 {
-  display: none;
-  color: darkred;
-}
-
-#error3 {
-  display: none;
-  color: darkred;
-}
-
-#error4 {
-  display: none;
-  color: red;
-}
-
-/*RESPONSIVE*/
-@media only screen and (max-width: 550px) {
-  .formulario {
-    display: none;
-  }
-  .formulario__responsive {
-    display: block;
-    background: rgba(210, 233, 233, 0.6);
-    margin: auto;
-    margin-top: 20px;
-    width: auto;
-    height: auto;
-    border-radius: 24px;
-  }
-  .formregistro {
-    text-align: center;
-    background-color: #d7ccc8;
-    border: 4px solid maroon;
-    border-radius: 40px;
-    background: rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    box-shadow: 0 0 15px 10px;
-    width: 400px;
-    height: 100%;
-    margin-left: 45px;
-    font-style: italic;
-    padding: 2px;
-  }
-  .btnregistro {
-    margin-top: 25px;
-    margin-right: 10px;
-    color: black;
-    font-weight: bold;
-    border-radius: 12px;
-    width: 150px;
-    background: #1F4690;
-    cursor: pointer;
-    border: none;
-  }
-  .btnregistro:hover {
-    background: #C0DBEA;
-  }
-  .titulo {
-    text-shadow: -1px -1px 1px #aaa, 0px 3px 1px rgba(0, 0, 0, 0.4), 3px 3px 5px rgba(0, 0, 0, 0.6), 0px 0px 6px rgba(0, 0, 0, 0.4);
-    color: #330000;
-    font-size: 80px;
-    font-weight: bold;
-  }
-  .formulario__responsive-formlogin {
-    text-align: center;
-    background-color: #d7ccc8;
-    border: 4px solid maroon;
-    border-radius: 40px;
-    background: rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    box-shadow: 0 0 15px 10px;
-    width: 440px;
-    height: auto;
-    font-style: italic;
-    padding: 5px;
-    margin-top: 20px;
-  }
-  .formulario__responsive-botonlogin {
-    width: 180px;
-    background: #1F4690;
-    cursor: pointer;
-    border: none;
-    padding: 5px 2px;
-    color: black;
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-    border-radius: 12px;
-  }
-  .formulario__responsive-botonlogin:hover {
-    background-color: steelblue;
-  }
-  .formulario__responsive-botones {
-    margin-top: 5px;
-  }
-  .formulario__responsive-boton {
-    margin-top: 15px;
-    width: 150px;
-    background: #1F4690;
-    cursor: pointer;
-    border: none;
-    padding: 5px 2px;
-    color: whitesmoke;
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-    border-radius: 12px;
-  }
-  .formulario__responsive-boton:hover {
-    background-color: steelblue;
-  }
-  .formulario__responsive-boton::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
-    background-size: 200%;
-    border-radius: 10px;
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-  }
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  .formulario__responsive-boton2 {
-    margin-top: 15px;
-    width: 150px;
-    background: #1F4690;
-    cursor: pointer;
-    border: none;
-    padding: 5px 2px;
-    color: whitesmoke;
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-    border-radius: 12px;
-  }
-  .formulario__responsive-boton2:hover {
-    background-color: steelblue;
-  }
-  .formulario__responsive-boton2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
-    background-size: 200%;
-    border-radius: 10px;
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-  }
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  .formulario__responsive-titulo--cambio {
-    text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
-    color: #330000;
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .formulario__responsive-formcambio {
-    background-color: #d7ccc8;
-    border: 4px solid maroon;
-    border-radius: 40px;
-    background: rgba(0, 0, 0, 0.1);
-    background-size: cover;
-    box-shadow: 0 0 15px 10px;
-    width: 400px;
-    height: 350px;
-    margin-left: 5%;
-    font-style: italic;
-    padding: 5px;
-    margin-top: 20px;
-  }
-  .formulario__responsive-botoncambio {
-    margin-right: 10px;
-    margin-top: 15px;
-    width: 90px;
-    height: 40px;
-    background: #1F4690;
-    cursor: pointer;
-    border: none;
-    padding: 5px 2px;
-    color: black;
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-    border-radius: 12px;
-  }
-  .formulario__responsive-botoncambio:hover {
-    background: #C0DBEA;
-  }
 }/*# sourceMappingURL=styles.css.map */
