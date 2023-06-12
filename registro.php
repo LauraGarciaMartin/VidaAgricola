@@ -2,85 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 <body class="claselogin">
-   <?php require_once("header.php");?>
-    <div class="formulario">
-        <h1 class="titulo">Registrate</h1>
-        <form id="formregistro" name="formregistro" class="formregistro" action="registro.php" method="post">
-            <div class="izquierda">
-                <label>Nombre de usuario: </label><br>
-                <input type="text" id="user" name="user"><br>
-                <label>Contraseña: </label><br>
-                <input type="password" id="pass" name="pass"><br>
-                <label>Confirma contraseña: </label><br>
-                <input type="password" id="passconfirm" name="passconfirm"><br>
-                <a id="error">Las contraseñas no coinciden</a><br>
-                <label>Nombre: </label><br>
-                <input type="text" id="nombre" name="nombre"><br>
-                <label>Apellido 1: </label><br>
-                <input type="text" id="ape1" name="ape1">
-            </div>
-            <div class="derecha">
-                <label>Apellido 2: </label><br>
-                <input type="text" id="ape2" name="ape2"><br>
-                <label>Correo electronico: </label><br>
-                <input type="text" id="email" name="email"><br>
-                <a id="error4">El correo no es valido</a><br>
-                <label>Direccion: </label><br>
-                <input type="text" id="dir" name="dir"><br>
-                <label>Codigo postal: </label><br>
-                <input type="text" id="codpostal" name="codpostal"><br>
-                <a id="error2">El codigo postal tiene que tener 5 digitos</a><br>
-                <label>Telefono: </label><br>
-                <input type="text" id="tel" name="tel"><br>
-                <a id="error3">El telefono tiene que tener 9 digitos</a>
-            </div>
-            <div class="abajo">
-                <input type="submit" id="registrar" name="registrar" value="Enviar" class="btnregistro">
-            </div>
-        </form>
+    <?php require_once("header.php");?>
+    <div class="container">
+        <div class="row">
+            <h1 class="titulo">Registrate</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class=" col-md-6 col-sm-4 col-xs-2">
+                <form id="formregistro" name="formregistro" class="formregistro" action="registro.php" method="post">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-sm-4">
+                            <label>Nombre de usuario: </label><br>
+                            <input type="text" id="user" name="user"><br>
+                            <label>Contraseña: </label><br>
+                            <input type="password" id="pass" name="pass"><br>
+                            <label>Confirma contraseña: </label><br>
+                            <input type="password" id="passconfirm" name="passconfirm"><br>
+                            <label>Nombre: </label><br>
+                            <input type="text" id="nombre" name="nombre"><br>
+                            <label>Apellido 1: </label><br>
+                            <input type="text" id="ape1" name="ape1">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Apellido 2: </label><br>
+                            <input type="text" id="ape2" name="ape2"><br>
+                            <label>Correo electronico: </label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <label>Direccion: </label><br>
+                            <input type="text" id="dir" name="dir"><br>
+                            <label>Codigo postal: </label><br>
+                            <input type="text" id="codpostal" name="codpostal"><br>
+                            <label>Telefono: </label><br>
+                            <input type="text" id="tel" name="tel"><br>
+                        </div>
+</div>
+<div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <input type="submit" id="registrar" name="registrar" value="Enviar" class="btnregistro">
+                    </div>
+</div>
+                </form>
+</div>
+        </div>
     </div>
-    
-     <div class="formulario__responsive">
-        <h1 class="formulario__responsive-titulo">Registrate</h1>
-        <form id="formregistroresponsive" name="formregistroresponsive" class="formulario__responsive-formregistro" action="registro.php" method="post">
-            <label>Nombre de usuario: </label><br>
-            <input type="text" id="user" name="user"><br>
-            <label>Contraseña: </label><br>
-            <input type="password" id="pass" name="pass"><br>
-            <label>Confirma contraseña: </label><br>
-            <input type="password" id="passconfirm" name="passconfirm"><br>
-            <a id="error">Las contraseñas no coinciden</a><br>
-            <label>Nombre: </label><br>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label>Apellido 1: </label><br>
-            <input type="text" id="ape1" name="ape1"><br>
-            <label>Apellido 2: </label><br>
-            <input type="text" id="ape2" name="ape2"><br>
-            <label>Correo electronico: </label><br>
-            <input type="text" id="email" name="email"><br>
-            <a id="error4">El correo no es valido</a><br>
-            <label>Direccion: </label><br>
-            <input type="text" id="dir" name="dir"><br>
-            <label>Codigo postal: </label><br>
-            <input type="text" id="codpostal" name="codpostal"><br>
-            <a id="error2">El codigo postal tiene que tener 5 digitos</a><br>
-            <label>Telefono: </label><br>
-            <input type="text" id="tel" name="tel"><br>
-            <a id="error3">El telefono tiene que tener 9 digitos</a>
-            <input type="submit" id="registrarse" name="registrarse" value="Enviar" class="formulario__responsive-btnregistro">
-        </form>
-    </div>
-
     <?php
     require_once("config.php");
-    if (isset($_POST['registrar']) || isset($_POST['registrarse'])) {
+    if (isset($_POST['registrar'])) {
         if (
             !empty($_POST['user']) && !empty($_POST['pass']) && !empty($_POST['passconfirm']) &&
             !empty($_POST['nombre']) && !empty($_POST['ape1']) && !empty($_POST['ape2']) &&
@@ -152,35 +129,57 @@
     
     ?>
     <footer class="footer footer-19">
-            <div class="container my-2">
-                <div class="row align-items-end">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-column-3 t2">
-                            <span class="copyright-text">Todos los derechos reservados</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-column-4">
-                            <div class="informaciones">
-                                <table class="info">
-                                    <tr>
-                                        <th class="titulo--footer contacto">Numero Contacto</th>
-                                        <th class="titulo--footer correo">Correo Contacto</th>
-                                        <th class="titulo--footer localizacion">Donde estamos</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text--footer contacto">912834582</td>
-                                        <td class="text--footer correo">info@gmail.com</td>
-                                        <td class="text--footer localizacion">Avenida Madrid,1 28341,Valdemoro,Madrid</td>
-                                    </tr>
-                                </table>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="copyright-text">Todos los derechos reservados</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titulo--footer">Numero Contacto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text--footer">912834582</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titulo--footer">Correo Contacto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text--footer">info@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titulo--footer">Donde estamos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text--footer">Avenida Madrid,1 28341,Valdemoro,Madrid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
     </footer>
 </body>
 </html>

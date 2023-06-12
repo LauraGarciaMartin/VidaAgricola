@@ -429,35 +429,57 @@
 
     </div>
     <footer class="footer footer-19">
-            <div class="container my-2">
-                <div class="row align-items-end">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-column-3 t2">
-                            <span class="copyright-text">Todos los derechos reservados</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-column-4">
-                            <div class="informaciones">
-                                <table class="info">
-                                    <tr>
-                                        <th class="titulo--footer contacto">Numero Contacto</th>
-                                        <th class="titulo--footer correo">Correo Contacto</th>
-                                        <th class="titulo--footer localizacion">Donde estamos</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text--footer contacto">912834582</td>
-                                        <td class="text--footer correo">info@gmail.com</td>
-                                        <td class="text--footer localizacion">Avenida Madrid,1 28341,Valdemoro,Madrid</td>
-                                    </tr>
-                                </table>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <span class="copyright-text">Todos los derechos reservados</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titulo--footer">Numero Contacto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text--footer">912834582</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titulo--footer">Correo Contacto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text--footer">info@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="titulo--footer">Donde estamos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text--footer">Avenida Madrid,1 28341,Valdemoro,Madrid</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
     </footer>
 </body>
 
