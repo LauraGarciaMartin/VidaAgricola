@@ -36,7 +36,13 @@ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQS
             
                 <img src='images/perfil/<?php echo $usu;?>/<?php echo $usu;?>.png' alt='1' class='pordefecto'>
             
-            <table class="table-perfil">
+            <?php
+        } else{
+            echo "<img class='pordefecto' src='images/perfil/default.png' alt='2'>"; //si no existe muestra una imagen por defecto
+        }
+
+        ?>
+        <table class="table-perfil">
                         <tr>
                             <td class="td-perfil"><i>NOMBRE Y APELLIDOS:</i><br><b><?php echo $_SESSION['nombre'];?> <?php echo $_SESSION['ape1'];?> <?php echo $_SESSION['ape2'];?></b></td>
                         </tr>
@@ -56,12 +62,6 @@ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQS
             
             
                 <button id='login' name='login' class='boton2'><a href='index.php'>Volver al inicio</a></button>
-            
-            <?php
-        } else{
-            echo "<img class='pordefecto' src='images/perfil/default.png' alt='2'>"; //si no existe muestra una imagen por defecto
-        }
-        ?>
     </div>
     <div class="perfil__responsive">
         <h1 class="perfil__responsive-titulo"><?php echo $_SESSION['nombre'];?> <?php echo $_SESSION['ape1'];?></h1>
@@ -80,7 +80,15 @@ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQS
             
                 <img src='images/perfil/<?php echo $usu;?>/<?php echo $usu;?>.png' alt='1' class='perfil__responsive-pordefecto'>
             
-                <table class="perfil__responsive-perfil-tabla">
+                
+            
+            <?php
+        } else{
+            echo "<img class='perfil__responsive-pordefecto' src='images/perfil/default.png' alt='2'>"; //si no existe muestra una imagen por defecto
+        }
+        
+        ?>
+        <table class="perfil__responsive-perfil-tabla">
                     <tr>
                         <td class="td-perfil"><i>NOMBRE Y APELLIDOS:</i><br><b><?php echo $_SESSION['nombre'];?> <?php echo $_SESSION['ape1'];?> <?php echo $_SESSION['ape2'];?></b></td>
                     </tr>
@@ -99,12 +107,6 @@ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQS
                 </table>
             
                 <button id='login' name='login' class='perfil__responsive-boton2'><a href='index.php'>Volver al inicio</a></button>
-            
-            <?php
-        } else{
-            echo "<img class='perfil__responsive-pordefecto' src='images/perfil/default.png' alt='2'>"; //si no existe muestra una imagen por defecto
-        }
-        ?>
     </div>
     <?php
     } else{

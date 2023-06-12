@@ -60,17 +60,17 @@ if(isset($_POST['cambiar'])){
         }
         
         if(empty($errors)){
-            if(!is_dir("./images/perfil/$usu")){
-                @mkdir("./images/perfil/$usu") or die("Fallo al crear la carpeta");
+            if(!is_dir("images/perfil/$usu")){
+                @mkdir("images/perfil/$usu") or die("Fallo al crear la carpeta");
             } else{
                 $maxsize = 5 * 1024 * 1024;
                 if($file_size > $maxsize){ 
-                    recorta("./images/perfil/$usu/"."$usu");
+                    recorta("images/perfil/$usu/"."$usu");
                 }
-                move_uploaded_file($file_tmp,"./images/perfil/$usu/".$usu.".png");
-                echo "subida correcta";
+                
             }           
-            
+            move_uploaded_file($file_tmp,"images/perfil/$usu/".$usu.".png");
+                echo "subida correcta";
         } else{
             print_r($errors);
         }
